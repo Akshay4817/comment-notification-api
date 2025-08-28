@@ -13,10 +13,10 @@ Setup
  cd comment-api
  npm install
 
-2. Environment (.env):
- PORT=5000
-MONGO_URI=mongodb+srv://vishunegi421:OKh7BEH6pMFNuWJO@cluster0.lkdpgql.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-JWT_SECRET=letitbesecret
+2. Environment (env):
+PORT
+MONGO_URI
+JWT_SECRET
 
 3. Run:
  npm run dev
