@@ -14,34 +14,31 @@ Setup
  npm install
 
 2. Environment (env):
-PORT
-MONGO_URI
-JWT_SECRET
+- PORT
+- MONGO_URI
+- JWT_SECRET
 
 3. Run:
- npm run dev
-Auth API
-POST /auth/register -> Register user
-POST /auth/login -> Login + JWT
-GET /auth/me -> Current user info
-Comment API
-POST /comments -> Post comment or reply
-GET /comments/:postId -> All comments (flat)
-GET /comments/nested/:postId -> Nested comment tree
-PATCH /comments/:commentId -> Edit comment (author)
-DELETE /comments/:commentId -> Delete (author/admin)
-Notification API
-GET /notifications -> All notifications
-PATCH /notifications/:id/read -> Mark one read
-PATCH /notifications/mark-all-read -> Mark all read
-DELETE /notifications/:id -> Delete notification
-Real-Time (Socket.IO)
-Emits 'notification' to receiverUserId on new comment, reply, or mention.
-Comment Notification API
-Example:
-socket.on('notification', data => {
- console.log('New:', data);
-});
+- npm run dev
+- Auth API
+- POST /auth/register -> Register user
+- POST /auth/login -> Login + JWT
+- GET /auth/me -> Current user info
+- Comment API
+- POST /comments -> Post comment or reply
+- GET /comments/:postId -> All comments (flat)
+- GET /comments/nested/:postId -> Nested comment tree
+- PATCH /comments/:commentId -> Edit comment (author)
+- DELETE /comments/:commentId -> Delete (author/admin)
+- Notification API
+- GET /notifications -> All notifications
+- PATCH /notifications/:id/read -> Mark one read
+- PATCH /notifications/mark-all-read -> Mark all read
+- DELETE /notifications/:id -> Delete notification
+- Real-Time (Socket.IO)
+- Emits 'notification' to receiverUserId on new comment, reply, or mention.
+- Comment Notification API
+
 
 Features
 - JWT auth with bcrypt
@@ -52,4 +49,4 @@ Features
 - Read/Delete notifications
 
 Author
-Akshay Negi
+- Akshay Negi
